@@ -1,0 +1,15 @@
+#N canvas 1157 156 768 507 12;
+#X obj 458 85 openpanel;
+#X obj 116 188 readsf~;
+#X obj 115 248 dac~;
+#X obj 458 50 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X msg 116 146 open ColdWindSoundEffect.wav \, 1;
+#X obj 208 195 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X msg 63 148 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 1 1 5 0;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;
+#X connect 5 0 4 0;
+#X connect 6 0 1 0;
